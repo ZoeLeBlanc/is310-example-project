@@ -81,13 +81,13 @@
 <div id="humanist_top_terms_by_coefficient"></div>
 
 <script>
-    var json_file = "/assets/files/humanist_top_terms.json";
+    var json_file = "{{ SITEURL }}/assets/files/humanist_top_terms.json";
     vegaEmbed('#humanist_top_terms', json_file);
 
-    var json_file2 = "/assets/files/humanist_top_terms_by_period.json";
+    var json_file2 = "{{ SITEURL }}/assets/files/humanist_top_terms_by_period.json";
     vegaEmbed('#humanist_top_terms_by_period', json_file2);
 
-    var json_file3 = "/assets/files/humanist_top_terms_by_coefficient.json";
+    var json_file3 = "{{ SITEURL }}/assets/files/humanist_top_terms_by_coefficient.json";
     vegaEmbed('#humanist_top_terms_by_coefficient', json_file3);
 </script>
     </div>
