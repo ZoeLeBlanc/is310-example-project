@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>  Data Analysis and Visualization | IS310 Example Project Site
+</title>
+  <link rel="canonical" href="./data-analysis.html">
+
+
+  <link rel="stylesheet" href="./theme/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./theme/css/fontawesome.min.css">
+  <link rel="stylesheet" href="./theme/css/pygments/default.min.css">
+  <link rel="stylesheet" href="./theme/css/theme.css">
+  <link rel="stylesheet" href="./theme/css/oldstyle.css">
+
+  
+  <meta name="description" content="Data Analysis & Methods In this section, I would detail how I analyzed the data for this project and share some of the aggregate data visualizations of the data. In particular, I would try to visualize how the NER extracted technologies have changed over time and how they relate to the …">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+<div class="row">
+  <div class="col-sm-12">
+    <h1 class="title"><a href="./">IS310 Example Project Site</a></h1>
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="./#" target="_blank">Humanizing Technology: Computationally Exploring the Humanist Listserv & the Rise of Web Technologies</a></li>
+          <li class="list-inline-item"><a href="https://zoeleblanc.com/is310-computing-humanities-2024/" target="_blank">IS310 Course Website</a></li>
+              <li class="list-inline-item text-muted">|</li>
+            <li class="list-inline-item"><a href="./pages/about.html">About</a></li>
+      </ul>
+  </div>
+</div>    </div>
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <h1>  Data Analysis and Visualization
+</h1>
+      <hr>
+  <article class="article">
+    <header>
+      <ul class="list-inline">
+        <li class="list-inline-item text-muted" title="2024-04-17T00:00:00-05:00">
+          <i class="fas fa-clock"></i>
+          Wed 17 April 2024
+        </li>
+        <li class="list-inline-item">
+          <i class="fas fa-folder-open"></i>
+          <a href="./category/misc.html">misc</a>
+        </li>
+          <li class="list-inline-item">
+            <i class="fas fa-user"></i>
+              <a href="./author/zoe-leblanc.html">Zoe LeBlanc</a>          </li>
+      </ul>
+    </header>
+    <div class="content">
+      <h2>Data Analysis &amp; Methods</h2>
+<ul>
+<li>In this section, I would detail how I analyzed the data for this project and share some of the aggregate data visualizations of the data. In particular, I would try to visualize how the NER extracted technologies have changed over time and how they relate to the rise of the web. I would also detail some of the choices I've made in my use of methods and data visualizations to make my interpretations clear (so for example, things I did not include or experiments that I decided were not useful but provided a foundation for my thinking and later experiments/visualizations).</li>
+<li>I would also detail some experiments of using TF-IDF and topic modeling to understand the conversations on the listserv and how these methods helped me to understand the data. I might not have a final answer to my initial question but showing some trends and using those to speculate about how these technologies have changed over time and how they have been discussed on the listserv. I would also detail any challenges I faced in using these methods and how I overcame them.</li>
+<li>In this section, I would also include, if relevant, a brief discussion of how others have analyzed data for similar projects. So for example, I might include the following projects/examples:</li>
+<li>Scholars and/or projects who have used topic modeling or TF-IDF to understand the historic documents and how they have visualized these results to understand the development of discourses.</li>
+<li>I would also again include relevant citations from our course readings and how they influenced my thinking about data analysis and methods.</li>
+<li>So I might include a reference to Melanie Walsh and Maria Antoniak's work with GoodReads since that influenced my approach to topic modeling.</li>
+<li>Finally, I would also include any reflections on how my thinking about data analysis and methods changed through this process.</li>
+</ul>
+<!-- Your existing content -->
+
+<div id="humanist_top_terms"></div>
+<div id="humanist_top_terms_by_period"></div>
+<div id="humanist_top_terms_by_coefficient"></div>
+
+<script>
+    var json_file = "/assets/files/humanist_top_terms.json";
+    vegaEmbed('#humanist_top_terms', json_file);
+
+    var json_file2 = "/assets/files/humanist_top_terms_by_period.json";
+    vegaEmbed('#humanist_top_terms_by_period', json_file2);
+
+    var json_file3 = "/assets/files/humanist_top_terms_by_coefficient.json";
+    vegaEmbed('#humanist_top_terms_by_coefficient', json_file3);
+</script>
+    </div>
+  </article>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+<div class="row">
+  <ul class="col-sm-6 list-inline">
+      <li class="list-inline-item"><a href="./authors.html">Authors</a></li>
+    <li class="list-inline-item"><a href="./archives.html">Archives</a></li>
+    <li class="list-inline-item"><a href="./categories.html">Categories</a></li>
+  </ul>
+  <p class="col-sm-6 text-sm-right text-muted">
+    Generated by <a href="https://github.com/getpelican/pelican" target="_blank">Pelican</a>
+    / <a href="https://github.com/nairobilug/pelican-alchemy" target="_blank">&#x2728;</a>
+  </p>
+</div>    </div>
+  </footer>
+
+</body>
+
+</html>
